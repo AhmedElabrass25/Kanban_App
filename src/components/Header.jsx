@@ -28,17 +28,19 @@ const Header = () => {
     <header className="bg-white py-5 shadow-md">
       <div className="container">
         <div className="flex w-full items-center justify-between">
-          <div className="logo flex items-center">
-            <img src={logo} className="w-10" alt="logo" />
-            <h1 className="text-3xl">Kanban</h1>
+          <div className="logo flex items-center gap-1">
+            <img src={logo} className="w-6 sm:w-10" alt="logo" />
+            <h1 className="text-lg font-bold md:text-3xl">Kanban</h1>
           </div>
           {/* Ellipse Icon */}
           <div className="flex items-center gap-2">
-            <p className="text-[18px] font-semibold uppercase">
+            <p className="text-[13px] font-semibold uppercase md:text-[18px]">
               all boards ( {dataState?.length} )
             </p>
             <DropDownList
-              link={<IoEllipsisVertical className="cursor-pointer text-2xl" />}
+              link={
+                <IoEllipsisVertical className="cursor-pointer text-lg md:text-2xl" />
+              }
               items={[
                 {
                   label: "Delete Board",

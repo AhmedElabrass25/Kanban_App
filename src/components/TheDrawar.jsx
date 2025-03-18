@@ -19,7 +19,7 @@ const TheDrawar = () => {
                   <li key={item.id}>
                     <button
                       onClick={() => setSelected(index)}
-                      className={`flex items-center gap-3 rounded-full bg-gray-100 px-6 py-3 font-semibold text-purple-700 ${selected == index ? "bg-purple-600 text-white hover:bg-none" : "hover:bg-purple-700/35"}`}
+                      className={`mb-3 flex items-center gap-3 rounded-full bg-gray-100 px-6 py-3 font-semibold text-purple-700 ${selected == index ? "bg-purple-600 text-white hover:bg-none" : "hover:bg-purple-700/35"}`}
                     >
                       <BsJournalBookmark />
                       {item.title}

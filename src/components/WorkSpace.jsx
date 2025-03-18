@@ -9,6 +9,7 @@ import {
   PointerSensor,
   useSensor,
   useSensors,
+  TouchSensor,
 } from "@dnd-kit/core";
 import {
   arrayMove,
@@ -35,6 +36,9 @@ const WorkSpace = ({ columns = [] }) => {
     useSensor(PointerSensor, {
       activationConstraint: { distance: 10 },
     }),
+    useSensor(TouchSensor, {
+      activationConstraint: { delay: 250, tolerance: 5 },
+    }), // For mobile touch
   );
   // ================Handle Drag End=============
   const handleDragEnd = (event) => {
