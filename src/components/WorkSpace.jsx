@@ -37,7 +37,9 @@ const WorkSpace = ({ columns = [] }) => {
       activationConstraint: { distance: 10 },
     }),
     useSensor(TouchSensor, {
-      activationConstraint: { delay: 250, tolerance: 5 },
+      activationConstraint: { distance: 5 }, // 🔥 Ensures instant activation
+      pressDelay: 0, // 🔥 No delay for better responsiveness
+      pressThreshold: 5, // 🔥 Small movement to detect drag
     }), // For mobile touch
   );
   // ================Handle Drag End=============
@@ -130,7 +132,7 @@ const WorkSpace = ({ columns = [] }) => {
             {dataState?.length > 0 && (
               <button
                 onClick={addNewColumn}
-                className="rounded-lg bg-gray-300 px-5 py-2 font-semibold text-gray-700"
+                className="mb-5 rounded-lg bg-gray-300 px-5 py-2 font-semibold text-gray-700"
               >
                 + New Column
               </button>
