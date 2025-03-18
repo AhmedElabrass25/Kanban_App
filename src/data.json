@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "board1",
+    "columns": [
+      {
+        "id": 1,
+        "title": "todo",
+        "tasks": [
+          {
+            "id": 1,
+            "title": "task1"
+          },
+          {
+            "id": 2,
+            "title": "task2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "board2",
+    "columns": [
+      {
+        "id": 1,
+        "title": "todo2",
+        "tasks": [
+          {
+            "id": 1,
+            "title": "task1"
+          },
+          {
+            "id": 2,
+            "title": "task2"
+          }
+        ]
+      }
+    ]
+  }
+]
