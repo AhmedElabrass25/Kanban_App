@@ -44,7 +44,7 @@ const Column = ({ column, id }) => {
   return (
     <div
       ref={setNodeRef}
-      className="group/col relative mb-5 w-full rounded-lg bg-gray-300 px-6 py-4 sm:w-[48%] md:w-[32%]"
+      className={`group/col relative mb-5 w-full rounded-lg bg-gray-300 px-6 py-4 sm:w-[48%] md:w-[32%]`}
     >
       <button
         onClick={deleteColumnHandler}

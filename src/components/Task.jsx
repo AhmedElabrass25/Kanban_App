@@ -61,6 +61,7 @@ const Task = ({ task, columnId, taskId }) => {
     transform: CSS.Transform.toString(transform),
     transition,
     cursor: "grab",
+    touchAction: "none", //Prevents scrolling issues on mobile
   };
 
   return (
